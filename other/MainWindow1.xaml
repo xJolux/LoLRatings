@@ -1,0 +1,100 @@
+﻿<Window x:Class="LoLRatings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoLRatings"
+        mc:Ignorable="d" 
+        Height="220" 
+        Width="180" 
+        ResizeMode="NoResize" 
+        WindowStyle="None" Title="MainWindow" 
+        Topmost="True" 
+        WindowStartupLocation="CenterScreen" 
+        AllowsTransparency="True" 
+        Background="Transparent">
+
+    <Border 
+        CornerRadius="15,15,15,15" 
+        Background="#333C3C3C">
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid RenderTransformOrigin="0.409,0.547" Margin="5,5,5,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="Win %" Foreground="#FF05FF00" Padding="0,0,0,0" ScrollViewer.CanContentScroll="True" FontSize="7" VerticalContentAlignment="Center"/>
+                <Label Content="Blue team:" Foreground="#FF0081FF" Padding="0,0,0,0" FontSize="7" Grid.Row="1" VerticalContentAlignment="Center"/>
+                <Label Content="Red team:" Foreground="Red" Padding="0,0,0,0" FontSize="7" Grid.Row="2" UseLayoutRounding="False" VerticalContentAlignment="Center"/>
+                <Label Content="100%" Foreground="#FF05FF00" Padding="0,0,0,0" ScrollViewer.CanContentScroll="True" FontSize="7" Grid.Column="1" Grid.Row="1" VerticalContentAlignment="Center"/>
+                <Label Content="End time:" Foreground="#FF05FF00" Padding="0,0,0,0" FontSize="7" Grid.Column="2" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+                <Label Content="100%" Foreground="#FF05FF00" Padding="0,0,0,0" ScrollViewer.CanContentScroll="True" FontSize="7" Grid.Column="1" Grid.Row="2" VerticalContentAlignment="Center"/>
+                <Label Content="35:00" Foreground="#FF05FF00" Padding="0,0,0,0" FontSize="7" Grid.Column="3" UseLayoutRounding="False" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ScrollViewer.CanContentScroll="True"/>
+            </Grid>
+            <Grid Margin="5,5,5,5" UseLayoutRounding="False" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Players:" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Content="#:" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" ScrollViewer.CanContentScroll="True" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Content="Min-Max:" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Content="Max%:" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" Grid.Column="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Content="Perf.:" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" Grid.Column="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Label Content="Top" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" Grid.Row="1" HorizontalContentAlignment="Center"/>
+                <Label Content="Blue Player" FontSize="7" Padding="0,0,0,0" Foreground="#FF0081FF" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="2"/>
+                <Label Content="Red Player" FontSize="7" Padding="0,0,0,0" Foreground="Red" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="3"/>
+                <Label Content="Jgl" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="4"/>
+                <Label Content="Blue Player" FontSize="7" Padding="0,0,0,0" Foreground="#FF0081FF" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="5"/>
+                <Label Content="Red Player" FontSize="7" Padding="0,0,0,0" Foreground="Red" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="6"/>
+                <Label Content="Mid" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="7"/>
+                <Label Content="Blue Player" FontSize="7" Padding="0,0,0,0" Foreground="#FF0081FF" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="8"/>
+                <Label Content="Red Player" FontSize="7" Padding="0,0,0,0" Foreground="Red" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="9"/>
+                <Label Content="Bot" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="10"/>
+                <Label Content="Blue Player" FontSize="7" Padding="0,0,0,0" Foreground="#FF0081FF" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="11"/>
+                <Label Content="Red Player" FontSize="7" Padding="0,0,0,0" Foreground="Red" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="12" Margin="0,0,0,1"/>
+                <Label Content="Sup" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="13" Margin="0,0,0,1"/>
+                <Label Content="Blue Player" FontSize="7" Padding="0,0,0,0" Foreground="#FF0081FF" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="14"/>
+                <Label Content="Red Player" FontSize="7" Padding="0,0,0,0" Foreground="Red" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="15"/>
+                <Label Content="N/A" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="2" Grid.Column="1"/>
+                <Label Content="N/A" FontSize="7" Padding="0,0,0,0" Foreground="#FF05FF00" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="3" Grid.Column="1"/>
+            </Grid>
+
+        </Grid>
+
+    </Border>
+</Window>
