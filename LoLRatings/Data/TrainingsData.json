@@ -1,13 +1,5 @@
 [
   {
-    "ratingPercentDiff": 0.0,
-    "endTime": 3000.0
-  },
-  {
-    "ratingPercentDiff": 100.0,
-    "endTime": 900.0
-  },
-  {
     "ratingPercentDiff": 17.994072,
     "endTime": 1476.0
   },

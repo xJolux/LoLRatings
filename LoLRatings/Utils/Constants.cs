@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Reflection;
+﻿using System.Collections.Generic;
 
 
 namespace LoLRatings
@@ -13,7 +10,6 @@ namespace LoLRatings
 
         // Path
         public static readonly string TRANINGS_DATA_JSON_PATH = "Data\\TrainingsData.json";
-        public static readonly string LOG_FILE_PATH = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "error.log");
     }
 
     public class Game
@@ -96,8 +92,8 @@ namespace LoLRatings
     public class Objective
     {
         // DragonKill
-        public const int DRAGON = 1500; // 2000
-        public const int ELDER = 3200; // 3000
+        public const int DRAGON = 1500;
+        public const int ELDER = 3200;
 
         // HordeKill
         public const int HORDE = 500;

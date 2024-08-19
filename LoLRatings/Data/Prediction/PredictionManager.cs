@@ -40,8 +40,8 @@ namespace LoLRatings.Data.Prediction
 
         public static void UpdateTrainingsDataList(GameData gameData, float ratingPercentDiff)
         {
-            // check if data is 
-            if (gameData.EventJsonDataList.Count() < 60 || gameData.GameMode != "CLASSIC" || !gameData.IsLive)
+            // check for correct game mode and if the game is live
+            if (gameData.GameMode != "CLASSIC" || !gameData.IsLive)
             {
                 return;
             }
@@ -50,7 +50,8 @@ namespace LoLRatings.Data.Prediction
             JToken lastEvent = gameData.EventJsonDataList.Last();
             int lastEventTime = lastEvent["EventTime"]?.ToObject<int>() ?? 0;
 
-            if (lastEvent == null || lastEvent["EventName"]?.ToString() != "GameEnd" || lastEventTime == 0)
+            // check if last event is game end and if the game lasted more than 15 minutes
+            if (lastEvent == null || lastEvent["EventName"]?.ToString() != "GameEnd" || lastEventTime < 900)
             {
                 return;
             }
